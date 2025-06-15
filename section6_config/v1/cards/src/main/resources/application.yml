@@ -14,3 +14,19 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+  profiles:
+    active:
+      - "qa"
+
+
+build:
+  version: 3.0
+
+cards:
+  message: "Welcome to EazyBank accounts related Local APIs - QA"
+  contactDetails:
+    name: "QA"
+    email: "qa@gmail.com"
+  onCallSupport:
+    - 8333032079
+    - 8333032079
