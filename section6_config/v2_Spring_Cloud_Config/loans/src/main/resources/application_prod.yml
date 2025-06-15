@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: prod
+
+build:
+  version: "1.0.0"
+
+loans:
+  message: "Welcome to EazyBank accounts related Local APIs - Prod"
+  contactDetails:
+    name: "Prod"
+    email: "Prod@gmail.com"
+  onCallSupport:
+    - 8333032079
+    - 8333032079
