@@ -1,6 +1,22 @@
 server:
   port: 8090
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 spring:
+  application:
+    name: loans
+  profiles:
+    active: "prod"
+  config:
+    import: "configserver:http://localhost:8071"
+  rabbitmq:
+    host: "localhost"
+    port: 5672
+    username: "guest"
+    password: "guest"
   datasource:
     url: jdbc:h2:mem:testdb
     driverClassName: org.h2.Driver
@@ -14,18 +30,3 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
-  profiles:
-    active:
-      - "qa"
-
-build:
-  version: 3.0
-
-loans:
-  message: "Welcome to EazyBank accounts related Local APIs - QA"
-  contactDetails:
-    name: "QA"
-    email: "qa@gmail.com"
-  onCallSupport:
-    - 8333032079
-    - 8333032079

@@ -1,0 +1,11 @@
+build:
+  version: "2.0.0"
+
+accounts:
+  message: "Welcome to EazyBank accounts related Local APIs - QA"
+  contactDetails:
+    name: "QA"
+    email: "qa@gmail.com"
+  onCallSupport:
+    - 8333032079
+    - 8333032079

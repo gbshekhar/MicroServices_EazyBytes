@@ -1,0 +1,11 @@
+build:
+  version: "3.0.0"
+
+accounts:
+  message: "Welcome to EazyBank accounts related Local APIs"
+  contactDetails:
+    name: "Bheemshekhar"
+    email: "bheemshekhar@gmail.com"
+  onCallSupport:
+    - 8333032079
+    - 8333032079
